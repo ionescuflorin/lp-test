@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Test</title>
+  </head>
+
+  <body>
+
+
+    <nav class="nav">
+      <div class="u-container">
+        <a href="https://www.hubgets.com/" target="_blank"
+          ><img
+            src="./img/logo-hubgets-simple.png"
+            alt="Hubgets Logo"
+            class="logo"
+        /></a>
+      </div>
+    </nav>
+
+
+
+
+    <header class="header">
+      <div class="u-container">
+        <h1 class="heading__primary">Create organization</h1>
+        <span class="heading__secondary"
+          >Small or large, any team will increase productivity with
+          Hubgets.</span
+        >
+        <span class="heading__secondary"
+          >It allows teams to filter noise and focus on results.</span
+        >
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="u-container">
+        <div class="u-row">
+          <div class="main__form">
+            <div class="main__form--container">
+              <img
+                class="main__form--container-icon"
+                src="./img/user-regular.svg"
+                alt="Icon Form"
+              />
+            </div>
+
+            <form id="form" action="#">
+              <div class="form__group">
+                <div class="form__group--item">
+                  <label class="form__group--item-label input-fluid" for="fname"
+                    >First name</label
+                  >
+                  <input
+                    class="form__group--item-input input-fluid"
+                    type="text"
+                    id="fname"
+                    name="first_name"
+                    required
+                  />
+                </div>
+
+                <div class="form__group--item">
+                  <label class="form__group--item-label" for="fname"
+                    >Last name</label
+                  >
+                  <input
+                    class="form__group--item-input"
+                    type="text"
+                    name="last_name"
+                    id="lname"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form__group--item">
+                <label class="form__group--item-label" for="company"
+                  >Company</label
+                >
+                <input
+                  class="form__group--item-input"
+                  type="text"
+                  name="company"
+                  id="company"
+                  required
+                />
+              </div>
+              <div class="form__group--item">
+                <label class="form__group--item-label" for="email"
+                  >E-mail address</label
+                >
+                <input
+                  class="form__group--item-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
+
+              <input
+                class="form__btn"
+                type="submit"
+                value="Register"
+                onclick="ValidateEmail(document.forms.form.email)"
+              />
+            </form>
+          </div>
+
+          <div class="main__details">
+            <div class="main__details--top">
+              <div class="main__details--item-top">
+                <img
+                  class="item-top__icon"
+                  src="./img/icon-1.png"
+                  alt="Icon 1"
+                />
+                <h2 class="item-top__text">
+                  Centralizes communication channels and reduces overhead.
+                </h2>
+              </div>
+              <div class="main__details--item-top">
+                <img
+                  class="item-top__icon"
+                  src="./img/icon-2.png"
+                  alt="Icon 2"
+                />
+                <h2 class="item-top__text">
+                  Centralizes communication channels and reduces overhead.
+                </h2>
+              </div>
+              <div class="main__details--item-top">
+                <img
+                  class="item-top__icon"
+                  src="./img/icon-3.png"
+                  alt="Icon 3"
+                />
+                <h2 class="item-top__text">
+                  Centralizes communication channels and reduces overhead.
+                </h2>
+              </div>
+            </div>
+
+            <div class="main__details--bottom">
+              <div class="main__details--item-bottom">
+                <img
+                  class="item-bottom__icon"
+                  src="./img/icon-4.png"
+                  alt="Icon 4"
+                />
+                <h2 class="item-bottom__text">
+                  +1 845 894 123
+                  <a
+                    href="mailto:help@hubgets.com"
+                    class="item-bottom__text--contact"
+                    >help@hubgets.com</a
+                  >
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="u-container">
+        <div class="u-row">
+          <div class="footer__block u-space-between">
+            <img
+              src="./img/logo-footer.png"
+              alt="Footer Logo"
+              class="footer__block--logo"
+            />
+            <p class="footer__block--copy">
+              &copy; Copyrights 2015 Hubgets, Inc
+            </p>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__block--titles">Our Company</h3>
+            <ul class="footer__block--list">
+              <li class="footer__block--list-item">
+                <a href="#" class="social__link">About Us</a>
+              </li>
+              <li class="footer__block--list-item">
+                <a href="#" class="social__link">Blog</a>
+              </li>
+              <li class="footer__block--list-item">
+                <a href="#" class="social__link">We are hiring</a>
+              </li>
+              <li class="footer__block--list-item">
+                <a href="#" class="social__link">Terms of Services</a>
+              </li>
+              <li class="footer__block--list-item">
+                <a href="#" class="social__link">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__block--titles">Hubgets</h3>
+            <ul class="footer__block--list">
+              <li class="footer__block--list-item">
+                <a href="#" class="social__link">Join the program</a>
+              </li>
+              <li class="footer__block--list-item">
+                <a href="#" class="social__link">Features</a>
+              </li>
+              <li class="footer__block--list-item">
+                <a href="#" class="social__link">Current Status</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__block--titles">Social</h3>
+            <ul class="footer__block--list">
+              <li class="footer__block--list-item">
+                <a href="" class="social__link"
+                  ><img
+                    src="./img/icon-twitter.png"
+                    alt="Twitter"
+                    class="social__link--icon"
+                  />
+                  <span class="social__link--text">Twitter</span></a
+                >
+              </li>
+              <li class="footer__block--list-item">
+                <a href="" class="social__link"
+                  ><img
+                    src="./img/icon-youtube.png"
+                    alt="Youtube"
+                    class="social__link--icon"
+                  />
+                  <span class="social__link--text">Youtube</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
