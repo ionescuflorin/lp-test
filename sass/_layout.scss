@@ -44,22 +44,10 @@
  float: right;
 }
 
-.u-valid {
-  display: none;
-  color: rgb(0, 184, 6);
-  
-}
-
-.u-invalid {
-  display: block;
-  font-size: 1rem;
-  color: rgb(255, 5, 5);
-  
-}
-
 .u-ml-9 {
   margin-left: 9.5%;
 }
+
 
 //////////////////////////////
 // COMPONENTS
@@ -187,6 +175,7 @@
             border: 1px solid $color-gray-regular-2;
             color: $color-gray-dark;
             font-size: $font-big;
+            
           }
 
           .input-fluid {

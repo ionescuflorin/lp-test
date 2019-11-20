@@ -53,15 +53,6 @@ body {
     .u-align-right {
       align-self: flex-end; } }
 
-.u-valid {
-  display: none;
-  color: #00b806; }
-
-.u-invalid {
-  display: block;
-  font-size: 1rem;
-  color: #ff0505; }
-
 .u-ml-9 {
   margin-left: 9.5%; }
 

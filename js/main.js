@@ -1,33 +1,38 @@
-var inputFname = document.getElementById("input-fname");
-var inputLname = document.getElementById("input-lname");
-var inputCompany = document.getElementById("input-company");
-var inputEmail = document.getElementById("input-email");
-var button = document.querySelector(".form__btn");
-var valid = document.querySelector(".u-valid");
-var invalid = document.querySelector(".u-invalid");
-var regEx = /\S+@\S+\.\S+/;
-var form = document.getElementById("form");
+let inputFname = document.getElementById("input-fname");
+let inputLname = document.getElementById("input-lname");
+let inputCompany = document.getElementById("input-company");
+let inputEmail = document.getElementById("input-email");
+let button = document.querySelector(".form__btn");
+let regEx = /\S+@\S+\.\S+/;
+let form = document.getElementById("form");
 
-function validateField() {
-  var textFields = document.getElementsByTagName("input");
-  for (var i = 0; i < textFields.length; i++) {
+
+const validateField = () => {
+  let textFields = document.getElementsByTagName("input");
+  for (let i = 0; i < textFields.length; i++) {
     if (textFields[i].type !== "submit" && textFields[i].value == "") {
       textFields[i].style.borderColor='red';
-    } else {
-      textFields[i].style.backgroundColor = "transparent";
+      
+    } else if (!regEx.test(inputEmail.value)) {
+      inputEmail.style.borderColor='red';
+    }
+    
+    else {
+      textFields[i].style.borderColor = "#00FF00";
     }
   }
 }
 
-function emailNotValid() {
-  if( regEx.test(inputEmail.value)) {
-    inputEmail.style.borderColor = "#00FF00";
-  } else {
-    inputEmail.style.borderColor='red';
+
+const validateFieldOut = () => {
+  let textFields = document.getElementsByTagName("input");
+  for (let i = 0; i < textFields.length; i++) {
+    textFields[i].style.borderColor='#ccc';
   }
 }
 
-function checkInput() {
+// Enable Register button if all fields are filled
+const checkInput = () => {
   if (
     inputFname.value.trim() !== "" &&
     regEx.test(inputEmail.value) &&
@@ -41,12 +46,11 @@ function checkInput() {
    
     button.style.backgroundColor = "#5f5f5f";
     button.disabled = true;
-
   }
-  validateField()
-  emailNotValid()
+
 }
 
+// Clear fileds after submitting
 form.addEventListener("submit", function(event) {
   event.preventDefault();
   alert("From Submitted");
@@ -55,3 +59,6 @@ form.addEventListener("submit", function(event) {
   inputCompany.value = "";
   inputEmail.value = "";
 });
+
+
+
