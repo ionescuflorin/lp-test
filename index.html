@@ -56,62 +56,79 @@
             <form id="form" action="#">
               <div class="form__group">
                 <div class="form__group--item">
-                  <label class="form__group--item-label input-fluid" for="fname"
+                  <label class="form__group--item-label input-fluid u-align-left" for="input-fname"
                     >First name</label
                   >
                   <input
-                    class="form__group--item-input input-fluid"
+                    class="form__group--item-input input-fluid u-align-left"
+                    oninput="checkInput()"
+                   
                     type="text"
-                    id="fname"
+                    id="input-fname"
                     name="first_name"
                     required
                   />
+                
+                 
                 </div>
 
                 <div class="form__group--item ">
-                  <label class="form__group--item-label input-fluid u-align-right" for="fname"
-                    >Last name</label
+                  <label class="form__group--item-label input-fluid u-align-right" for="input-lname"
+                    >Last name  
+                    </label
                   >
                   <input
                     class="form__group--item-input input-fluid u-align-right"
+                    oninput="checkInput()"
+                   
                     type="text"
                     name="last_name"
-                    id="lname"
+                    id="input-lname"
                     required
                   />
+                 
+                 
+                
                 </div>
               </div>
-              <div class="form__group--item">
-                <label class="form__group--item-label " for="company"
+              <div class="form__group--item ">
+                <label class="form__group--item-label u-align-left" for="input-company"
                   >Company</label
                 >
                 <input
-                  class="form__group--item-input"
+                  class="form__group--item-input "
+                  oninput="checkInput()"
+                 
                   type="text"
                   name="company"
-                  id="company"
+                  id="input-company"
                   required
                 />
+                
+               
               </div>
               <div class="form__group--item">
-                <label class="form__group--item-label " for="email"
+                <label class="form__group--item-label u-align-left" for="input-email"
                   >E-mail address</label
                 >
                 <input
                   class="form__group--item-input"
+                  oninput="checkInput()"
+                 
                   type="email"
                   name="email"
-                  id="email"
+                  id="input-email"
                   required
                 />
+               
               </div>
 
-              <input
+              <button
                 class="form__btn"
                 type="submit"
                 value="Register"
-                onclick="ValidateEmail(document.forms.form.email)"
-              />
+                disabled
+              >Register</button>
             </form>
           </div>
 
@@ -173,7 +190,7 @@
 
     <footer class="footer">
       <div class="u-container">
-        <div class="u-row">
+        <div class="u-row-flex">
           <div class="footer__block u-space-between">
             <img
               src="./img/logo-footer.png"
