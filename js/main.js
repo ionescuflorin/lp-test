@@ -12,10 +12,18 @@ function validateField() {
   var textFields = document.getElementsByTagName("input");
   for (var i = 0; i < textFields.length; i++) {
     if (textFields[i].type !== "submit" && textFields[i].value == "") {
-      textFields[i].style.backgroundColor = "#ffcccb";
+      textFields[i].style.borderColor='red';
     } else {
       textFields[i].style.backgroundColor = "transparent";
     }
+  }
+}
+
+function emailNotValid() {
+  if( regEx.test(inputEmail.value)) {
+    inputEmail.style.borderColor = "#00FF00";
+  } else {
+    inputEmail.style.borderColor='red';
   }
 }
 
@@ -28,14 +36,15 @@ function checkInput() {
   ) {
     button.style.backgroundColor = "#00b5ef";
     button.disabled = false;
-    inputEmail.style.backgroundColor = "transparent";
+    
   } else {
-    inputEmail.style.backgroundColor='#ffcccb';
+   
     button.style.backgroundColor = "#5f5f5f";
     button.disabled = true;
 
   }
   validateField()
+  emailNotValid()
 }
 
 form.addEventListener("submit", function(event) {
