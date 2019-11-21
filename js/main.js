@@ -55,6 +55,7 @@ form.addEventListener("submit", function(event) {
   event.preventDefault();
   alert("From Submitted");
   inputFname.value = "";
+  inputFname.value = "";
   inputLname.value = "";
   inputCompany.value = "";
   inputEmail.value = "";
