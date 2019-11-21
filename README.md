@@ -9,7 +9,7 @@ git clone
 npm install
 ```
 
-If some error appear plese install manually
+If some error appear please install manually, the following tool
 ```
 npm install -g live-server
 ```
@@ -21,13 +21,13 @@ npm install -g live-server
 ```
 npm start
 ```
-2.For testin the generations of the bluid code you can run
+2.For testing the generating of the bluid code you can run
 
 ```
 npm run build
 ```
 
-## The above command it will executes three scripts
+## The above command it will execute three scripts
 
 * compile:sass - it will compile sass code into css (generates style.comp.css file)
 * prefix:css - it will prefix the css code from style.comp.css (generates style.prefix.css file)
@@ -45,7 +45,7 @@ npm run build
 1. In this HTML code
 
 ```
-    // This div was added to solve an IE bug related to images, because if the img tag it will no be wrapped by a div the image it will shrink
+    // This div was added to solve an IE bug related to images, because if the img tag it will not be wrapped by a div, the image it will shrink
     <div>
       <img class="item-top__icon" src="./img/icon-1.png" alt="Icon 1" />
     </div>
@@ -53,7 +53,7 @@ npm run build
 2. In this CSS code
 
 ```
-    // In media query part I use for responsiveness display block due to also a small bug in IE which had some problem with display flex
+    // In media query part I use for responsiveness 'display block' due to also a small bug in IE which had some problems with display flex
     .u-row {
         display: flex;
         justify-content: space-between;
