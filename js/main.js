@@ -42,6 +42,7 @@ const checkInput = () => {
     button.style.backgroundColor = "#00b5ef";
     button.disabled = false;
     
+    
   } else {
    
     button.style.backgroundColor = "#5f5f5f";
@@ -59,6 +60,7 @@ form.addEventListener("submit", function(event) {
   inputLname.value = "";
   inputCompany.value = "";
   inputEmail.value = "";
+  checkInput();
 });
 
 
